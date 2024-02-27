@@ -16,36 +16,44 @@ export default StyleSheet.create({
   twittContainer: {
     marginTop: 10,
     marginBottom: 3,
-    marginRight: 5,
-    marginLeft: 8,
+    paddingRight: 5,
+    paddingLeft: 8,
     borderBottomWidth: 0.2,
     borderColor: 'grey',
+    
   },
   likeContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
+    marginRight: 60,
   },
   likeText: {
     marginLeft: 10,
     color: 'grey',
-    
   },
-  martaTwittIcon:{
-    justifyContent:'center',
-    alignItems:'center'
+  twittIcon: {
+    justifyContent: 'center',
+    alignItems: 'center',
   },
-  userName:{
-    fontSize:17,
-    fontWeight:'bold',
-    marginLeft:10
+  userName: {
+    fontSize: 17,
+    fontWeight: 'bold',
+    marginLeft: 4,
   },
-  userTag:{
-    fontSize:17,
-    marginLeft:10
+  userTag: {
+    fontSize: 17,
+    marginLeft: 10,
+    color: 'grey',
   },
-  twitTime:{
-    fontSize:17,
-    marginLeft:10
+  twittTextContainer:{
+    flexDirection: 'row', marginTop: 5, width: 300
+  },
+  twittText:{
+    fontWeight: '500', marginRight: 10, marginLeft: 5
+  },
+  thread:{
+    color: 'rgb(97, 156, 229)' , marginBottom:10
   }
+
 });
