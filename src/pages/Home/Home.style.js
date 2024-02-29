@@ -35,6 +35,7 @@ export default StyleSheet.create({
   twittIcon: {
     justifyContent: 'center',
     alignItems: 'center',
+    marginLeft:8
   },
   userName: {
     fontSize: 17,
@@ -43,7 +44,7 @@ export default StyleSheet.create({
   },
   userTag: {
     fontSize: 17,
-    marginLeft: 10,
+    marginLeft: 5,
     color: 'grey',
   },
   twittTextContainer:{
