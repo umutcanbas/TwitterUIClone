@@ -6,7 +6,7 @@ import User from '../../assets/svgs/user.svg';
 import TwitterLogo from '../../assets/svgs/twitterlogo.svg';
 import Stars from '../../assets/svgs/stars.svg';
 import HeartIcon from '../../assets/svgs/heartIcon.svg';
-import MartaAvatar from '../../assets/svgs/martaCraigIcon.svg';
+import MartaAvatar from '../../assets/svgs/martaAvatar.svg';
 import Line from '../../assets/svgs/line.svg';
 import DownIcon from '../../assets/svgs/downIcon.svg';
 import MartaActionButttons from '../../assets/svgs/martaActionButton.svg';
@@ -175,7 +175,7 @@ const Home = () => {
           </View>
         </View>
         {/* KARENNE TWETT */}
-        <View style={styles.twittContainer}>
+        <View style={{...styles.twittContainer, borderBottomWidth:0}}>
           <View
             style={{
               ...styles.likeContainer,

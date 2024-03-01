@@ -1,4 +1,4 @@
-import {View, Text} from 'react-native';
+import {View, Text, Image, ScrollView} from 'react-native';
 import React from 'react';
 
 import styles from './Mentions.style';
@@ -13,46 +13,83 @@ import DownIcon from '../../../assets/svgs/downIcon.svg';
 const Mentions = () => {
   return (
     <View style={styles.container}>
-      <View
-        style={{
-          justifyContent: 'center',
-          alignItems: 'center',
-          flexDirection: 'row',
-          paddingTop: 20,
-        }}>
-        <MentionsAvatar1 height={50} width={50} />
-        <View style={styles.twitContainer}>
-          <Text style={styles.userName}>Mariane</Text>
-          <Text style={styles.userTag}>@marianeee</Text>
-          <Text style={{...styles.userTag, marginRight: 60}}>·1/21/20</Text>
-          <DownIcon height={12} width={12} />
+      {/* Marine mention */}
+      <ScrollView>
+        <View style={styles.userContainer}>
+          <MentionsAvatar1 height={50} width={50} />
+          <View style={styles.twitContainer}>
+            <Text style={styles.userName}>Mariane</Text>
+            <Text style={styles.userTag}>@marianeee</Text>
+            <Text style={{...styles.userTag, marginRight: 60}}>·1/21/20</Text>
+            <DownIcon height={12} width={12} />
+          </View>
         </View>
-      </View>
 
-      <View style={styles.twitTextContainer}>
-        <Text style={{fontSize: 17}}>
-          Hey {'\n'}
-          <Text style={{color: 'rgb(97,156,229)'}}>
-            @theflaticon @iconmonstr @pixsellz @dan ielbruce_ @romanshamin
-            @_vect_ @glyphish
-          </Text>{' '}
-          ! {'\n'} Check our our new article “Top Icons Packs and Resources for
-          Web”. You are in! 😎{'\n'} 👉{' '}
-          <Text style={{color: 'rgb(97,156,229)'}}>
-            {' '}
-            marianeee.com/blog/top-icons...
+        <View style={styles.twitTextContainer}>
+          <Text style={{fontSize: 17}}>
+            Hey {'\n'}
+            <Text style={{color: 'rgb(97,156,229)'}}>
+              @theflaticon @iconmonstr @pixsellz @dan ielbruce_ @romanshamin
+              @_vect_ @glyphish
+            </Text>{' '}
+            ! {'\n'} Check our our new article “Top Icons Packs and Resources
+            for Web”. You are in! 😎{'\n'} 👉{' '}
+            <Text style={{color: 'rgb(97,156,229)'}}>
+              {' '}
+              marianeee.com/blog/top-icons...
+            </Text>
           </Text>
-        </Text>
-      </View>
+        </View>
 
-      <View style={{borderWidth:0.2, borderRadius:15 , borderColor:'grey'}} >
-        <View style={{borderTopLeftRadius:15, borderTopRightRadius:15}}>
-          <MentionImage1 /* height={'%100'} width={'%100'} */  />
+        <View style={styles.ımageContainer}>
+          <View style={styles.ımage}>
+            <Image
+              source={require('../../../assets/svgs/mentionImage1png.png')}
+              resizeMode="contain"
+              style={{width: '100%', height: '100%'}}
+            />
+          </View>
+          <View style={styles.ımageTextContainer}>
+            <Text style={{fontSize: 17}}>
+              Top Icons Packs and Resources for Web {'\n'}
+              <Text style={{color: 'grey'}}>flatlogic.com</Text>{' '}
+            </Text>
+          </View>
         </View>
-        <View>
-          <Text>Top Icons Packs and Resources for Web {'\n'}flatlogic.com</Text>
+
+        {/* Crown mention */}
+
+        <View style={styles.userContainer}>
+          <MentionsAvatar2 height={50} width={50} />
+          <View style={styles.twitContainer}>
+            <Text style={styles.userName}>Mariane</Text>
+            <Text style={styles.userTag}>@marianeee</Text>
+            <Text style={{...styles.userTag, marginRight: 60}}>·1/21/20</Text>
+            <DownIcon height={12} width={12} />
+          </View>
         </View>
-      </View>
+
+        <View style={styles.twitTextContainer}>
+          <Text style={{fontSize: 17}}>
+            Fragments Android Wireframe Kit UX Wire was jusr featured in today’s
+            <Text style={{color: 'rgb(97,156,229)'}}>
+              {/*  */} crownlistllc.com
+            </Text>{' '}
+            newsletter via
+            <Text style={{color: 'rgb(97,156,229)'}}> @pixsellz</Text>
+          </Text>
+        </View>
+
+        <View style={{...styles.ımageContainer, borderBottomWidth: 0}}>
+          <View style={{...styles.ımage, width: 400, height: 250}}>
+            <Image
+              source={require('../../../assets/svgs/mentionImagePNG2.png')}
+              resizeMode="contain"
+              style={{width: '100%', height: '100%'}}
+            />
+          </View>
+        </View>
+      </ScrollView>
     </View>
   );
 };

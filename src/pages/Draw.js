@@ -1,12 +1,16 @@
-import {SafeAreaView, Text} from 'react-native';
+import {View, SafeAreaView, Text} from 'react-native';
 import React from 'react';
 import {DrawerContentScrollView} from '@react-navigation/drawer';
+import ZackAvatar from '../assets/svgs/zackAvatar.svg';
 
-const Draw = (props) => {
+
+const Draw = props => {
   return (
-    <SafeAreaView>
+    <SafeAreaView style={{flex:1}}>
       <DrawerContentScrollView {...props}>
-        <Text>Draw</Text>
+        <View>
+         <ZackAvatar/>
+        </View>
       </DrawerContentScrollView>
     </SafeAreaView>
   );
