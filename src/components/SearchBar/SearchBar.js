@@ -3,9 +3,9 @@ import React from 'react';
 
 import SearchBarIcon from '../../assets/svgs/searchBarIcon.svg';
 
-const SearchBar = ({ placeholder}) => {
+const SearchBar = ({ placeholder, inputContainer}) => {
   return (
-    <View style={styles.searchBarContainer}>
+    <View style={{...styles.searchBarContainer , ...inputContainer}}>
       <SearchBarIcon />
       <TextInput
         style={styles.searchBarInput}
@@ -18,7 +18,7 @@ const SearchBar = ({ placeholder}) => {
 const styles = StyleSheet.create({
   searchBarContainer: {
     height: 30,
-    width: 250,
+    width: '%100',
     borderColor: '#ccc',
     borderWidth: 1,
     borderRadius: 15,
@@ -27,6 +27,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     flexDirection: 'row',
     backgroundColor: '#e0e0e0',
+    marginHorizontal:15
   },
   searchBarInput: {
     flex: 1,

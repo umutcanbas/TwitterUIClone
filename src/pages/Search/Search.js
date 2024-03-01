@@ -11,7 +11,7 @@ const Search = () => {
     <SafeAreaView style={styles.container}>
       <View style={styles.headerContainer}>
         <User />
-        <SearchBar placeholder="Search Twitter" />
+        <SearchBar placeholder="Search Twitter" inputContainer={{width:270}}/>
         <Settings />
       </View>
 
