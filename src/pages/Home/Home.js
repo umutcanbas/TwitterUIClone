@@ -175,7 +175,7 @@ const Home = () => {
           </View>
         </View>
         {/* KARENNE TWETT */}
-        <View style={{...styles.twittContainer, borderBottomWidth:0}}>
+        <View style={{...styles.twittContainer, borderBottomWidth: 0}}>
           <View
             style={{
               ...styles.likeContainer,

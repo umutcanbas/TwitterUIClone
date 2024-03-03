@@ -1,4 +1,4 @@
-import {View, SafeAreaView, Text ,TouchableOpacity} from 'react-native';
+import {View, SafeAreaView, Text, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {DrawerContentScrollView} from '@react-navigation/drawer';
 
@@ -34,9 +34,7 @@ const Draw = (props, {navigation}) => {
           <View style={styles.users}>
             <SecondAccount width="30" height="30" />
             <ThirdAccount width="30" height="30" />
-            <TouchableOpacity>
-              <Menu width="30" height="30" />
-            </TouchableOpacity>
+            <Menu width="30" height="30" />
           </View>
         </View>
 
@@ -89,7 +87,7 @@ const Draw = (props, {navigation}) => {
 
       <View style={styles.footer}>
         <BottomLeftIcon />
-        <BottomRightIcon/>
+        <BottomRightIcon />
       </View>
     </SafeAreaView>
   );

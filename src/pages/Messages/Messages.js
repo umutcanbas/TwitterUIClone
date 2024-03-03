@@ -32,7 +32,7 @@ const Messages = (props) => {
       <ScrollView>
         <View style={styles.headerContainer}>
           <User />
-          <Text style={styles.headerContainerText}>Notifications</Text>
+          <Text style={styles.headerContainerText}>Messages</Text>
           <TouchableOpacity onPress={() => handlePage()}>
             <Settings />
           </TouchableOpacity>
