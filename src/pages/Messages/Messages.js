@@ -1,4 +1,10 @@
-import {View, Text, SafeAreaView, ScrollView} from 'react-native';
+import {
+  View,
+  Text,
+  SafeAreaView,
+  ScrollView,
+  TouchableOpacity,
+} from 'react-native';
 import React from 'react';
 import styles from './Messages.style';
 
@@ -16,14 +22,20 @@ import MartaAvatar from '../../assets/svgs/martaAvatar.svg';
 import KeironAvatar from '../../assets/svgs/keironAvatar.svg';
 import ZackAvatar from '../../assets/svgs/zackAvatar.svg';
 
-const Messages = () => {
+const Messages = (props) => {
+  const handlePage = () => {
+    props.navigation.navigate('MessagesSettingPage');
+  };
+
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView>
         <View style={styles.headerContainer}>
           <User />
           <Text style={styles.headerContainerText}>Notifications</Text>
-          <Settings />
+          <TouchableOpacity onPress={() => handlePage()}>
+            <Settings />
+          </TouchableOpacity>
         </View>
         <View
           style={{

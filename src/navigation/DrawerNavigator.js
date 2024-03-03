@@ -1,6 +1,10 @@
 import {createDrawerNavigator} from '@react-navigation/drawer';
 import TabNavigator from './TabNavigator';
-import Draw from '../pages/Draw';
+import Draw from '../pages/Draw/Draw';
+import ProfilePage from '../pages/Profile/Profile';
+import List from '../pages/List/List';
+import SettingsAndPrivacy from '../pages/SettingAndPrivacy/SettingsAndPrivacy';
+import MessagesSetting from '../pages/Messages/MessagesSettings/MessagesSetting';
 
 const Drawer = createDrawerNavigator();
 
@@ -10,6 +14,10 @@ const DrawerNavigator = () => {
       screenOptions={{headerShown: false}}
       drawerContent={props => <Draw {...props} />}>
       <Drawer.Screen name="TabNavigator" component={TabNavigator} />
+      <Drawer.Screen name="ProfilePage" component={ProfilePage} />
+      <Drawer.Screen name="ListPage" component={List} />
+      <Drawer.Screen name="SettingsAndPrivacyPage" component={SettingsAndPrivacy} />
+      <Drawer.Screen name="MessagesSettingPage" component={MessagesSetting} />
     </Drawer.Navigator>
   );
 };
