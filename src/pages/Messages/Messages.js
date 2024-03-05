@@ -23,13 +23,13 @@ import KeironAvatar from '../../assets/svgs/keironAvatar.svg';
 import ZackAvatar from '../../assets/svgs/zackAvatar.svg';
 import Button from '../../components/Button/Button';
 
-const Messages = (props) => {
+const Messages = props => {
   const handleMessageSetting = () => {
     props.navigation.navigate('MessagesSettingPage');
   };
-  const handleTwetting=()=>{
-    props.navigation.navigate('NewMessagePage')
-      }
+  const handleMessage = () => {
+    props.navigation.navigate('NewMessagePage');
+  };
 
   return (
     <SafeAreaView style={styles.container}>
@@ -47,7 +47,7 @@ const Messages = (props) => {
             borderColor: 'grey',
             paddingBottom: 10,
           }}>
-          <SearchBar placeholder="Search for people and groups" />
+            <SearchBar placeholder="Search for people and groups" />
         </View>
         {/* Aziz message */}
         <View style={styles.messageContainer}>
@@ -170,7 +170,7 @@ const Messages = (props) => {
           <Text style={styles.messageDate}>11/10/18</Text>
         </View>
       </ScrollView>
-      <Button onPress={handleTwetting} title={'Messages'}/>
+      <Button onPress={handleMessage} title={'Messages'} />
     </SafeAreaView>
   );
 };
