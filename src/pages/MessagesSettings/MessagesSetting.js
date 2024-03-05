@@ -3,7 +3,7 @@ import React , {useState} from 'react';
 
 import styles from './MessagesSettings.style';
 
-import BackIcon from '../../../assets/svgs/leftArrowIcon.svg';
+import BackIcon from '../../assets/svgs/leftArrowIcon.svg';
 
 const MessagesSetting = (props, {navigation}) => {
   const [receiveMessagesFromAnyone, setReceiveMessagesFromAnyone] = useState(false);

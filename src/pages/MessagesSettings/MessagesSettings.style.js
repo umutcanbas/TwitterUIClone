@@ -3,7 +3,7 @@ import {StyleSheet} from 'react-native';
 export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'rgb(232, 236, 240)',
+    backgroundColor: 'white',
   },
   headerContainer: {
     flexDirection: 'row',
@@ -29,7 +29,6 @@ export default StyleSheet.create({
   },
   settingContainer: {
     backgroundColor: 'white',
-
     paddingHorizontal: 17,
     paddingVertical: 5,
     borderBottomWidth: 0.2,
@@ -49,4 +48,5 @@ export default StyleSheet.create({
   settingText: {
     color: 'grey',
   },
+  
 });
