@@ -20,7 +20,6 @@ const DrawerNavigator = () => {
       <Drawer.Screen name="ProfilePage" component={ProfilePage} />
       <Drawer.Screen name="ListPage" component={List} />
       <Drawer.Screen name="SettingsAndPrivacyPage" component={SettingsAndPrivacy} />
-      <Drawer.Screen name="MessagePage" component={Messages} />
       <Drawer.Screen name="MessagesSettingPage" component={MessagesSetting} />
       <Drawer.Screen name="TwettingPage" component={Twetting} />
       <Drawer.Screen name="NewMessagePage" component={NewMessage} />
