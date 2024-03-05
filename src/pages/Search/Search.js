@@ -5,8 +5,12 @@ import SearchBar from '../../components/SearchBar/SearchBar';
 
 import User from '../../assets/svgs/user.svg';
 import Settings from '../../assets/svgs/settingsIcon.svg';
+import Button from '../../components/Button/Button';
 
-const Search = () => {
+const Search = ({navigation}) => {
+  const handleTwetting=()=>{
+    navigation.navigate('TwettingPage')
+      }
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.headerContainer}>
@@ -33,6 +37,7 @@ const Search = () => {
       </View>
 
       <View style={{flex: 1, backgroundColor: '#E7ECF0'}}></View>
+      <Button title={'Tweet'} onPress={handleTwetting}/>
     </SafeAreaView>
   );
 };

@@ -21,11 +21,15 @@ import MaximiliamAvatar from '../../assets/svgs/maximillimAvatar.svg';
 import MartaAvatar from '../../assets/svgs/martaAvatar.svg';
 import KeironAvatar from '../../assets/svgs/keironAvatar.svg';
 import ZackAvatar from '../../assets/svgs/zackAvatar.svg';
+import Button from '../../components/Button/Button';
 
 const Messages = (props) => {
-  const handlePage = () => {
+  const handleMessageSetting = () => {
     props.navigation.navigate('MessagesSettingPage');
   };
+  const handleTwetting=()=>{
+    props.navigation.navigate('NewMessagePage')
+      }
 
   return (
     <SafeAreaView style={styles.container}>
@@ -33,7 +37,7 @@ const Messages = (props) => {
         <View style={styles.headerContainer}>
           <User />
           <Text style={styles.headerContainerText}>Messages</Text>
-          <TouchableOpacity onPress={() => handlePage()}>
+          <TouchableOpacity onPress={() => handleMessageSetting()}>
             <Settings />
           </TouchableOpacity>
         </View>
@@ -166,6 +170,7 @@ const Messages = (props) => {
           <Text style={styles.messageDate}>11/10/18</Text>
         </View>
       </ScrollView>
+      <Button onPress={handleTwetting} title={'Messages'}/>
     </SafeAreaView>
   );
 };

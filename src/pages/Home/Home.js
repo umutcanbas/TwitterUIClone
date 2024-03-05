@@ -21,8 +21,13 @@ import Tick from '../../assets/svgs/tickIcon.svg';
 
 import KarenneAvatar from '../../assets/svgs/kranneAvatar.svg';
 import KarenneActionButtons from '../../assets/svgs/karenneActionButtons.svg';
+import Button from '../../components/Button/Button';
 
-const Home = () => {
+const Home = ({navigation}) => {
+  const handleTwetting=()=>{
+navigation.navigate('TwettingPage')
+  }
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.headerContainer}>
@@ -221,6 +226,7 @@ const Home = () => {
           </View>
         </View>
       </ScrollView>
+          <Button onPress={handleTwetting} title={'Tweet'} />
     </SafeAreaView>
   );
 };

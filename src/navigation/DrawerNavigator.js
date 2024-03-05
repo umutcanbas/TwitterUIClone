@@ -4,8 +4,10 @@ import Draw from '../pages/Draw/Draw';
 import ProfilePage from '../pages/Profile/Profile';
 import List from '../pages/List/List';
 import SettingsAndPrivacy from '../pages/SettingAndPrivacy/SettingsAndPrivacy';
-import MessagesSetting from '../pages/Messages/MessagesSettings/MessagesSetting';
+import MessagesSetting from '../pages/MessagesSettings/MessagesSetting';
 import Messages from '../pages/Messages/Messages';
+import Twetting from '../pages/Twetting/Twetting';
+import NewMessage from '../pages/NewMessage/NewMessage';
 
 const Drawer = createDrawerNavigator();
 
@@ -20,6 +22,8 @@ const DrawerNavigator = () => {
       <Drawer.Screen name="SettingsAndPrivacyPage" component={SettingsAndPrivacy} />
       <Drawer.Screen name="MessagePage" component={Messages} />
       <Drawer.Screen name="MessagesSettingPage" component={MessagesSetting} />
+      <Drawer.Screen name="TwettingPage" component={Twetting} />
+      <Drawer.Screen name="NewMessagePage" component={NewMessage} />
 
     </Drawer.Navigator>
   );

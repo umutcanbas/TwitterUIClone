@@ -8,10 +8,14 @@ import Settings from '../../assets/svgs/settingsIcon.svg';
 
 import All from './All/All';
 import Mentions from './Mentions/Mentions';
+import Button from '../../components/Button/Button';
 
 const Tab = createMaterialTopTabNavigator();
 
-const Notification = () => {
+const Notification = ({navigation}) => {
+  const handleTwetting=()=>{
+    navigation.navigate('TwettingPage')
+      }
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.headerContainer}>
@@ -31,6 +35,7 @@ const Notification = () => {
 
         <Tab.Screen name="Mentions" component={Mentions} />
       </Tab.Navigator>
+      <Button title={'Tweet'} onPress={handleTwetting}/>
     </SafeAreaView>
   );
 };
