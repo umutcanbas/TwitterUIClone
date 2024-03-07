@@ -7,46 +7,57 @@ export default StyleSheet.create({
   },
   headerContainer: {
     flexDirection: 'row',
-    borderBottomWidth: 0.2,
-    borderColor: 'grey',
     alignItems: 'center',
     justifyContent: 'space-between',
     padding: 15,
     backgroundColor: 'white',
   },
-  headerTextContainer: {
-    borderBottomWidth: 0.2,
-    borderColor: 'grey',
-    height: 40,
+  titleComponent: {
+    backgroundColor: 'rgb(232, 236, 240)',
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    height: 50,
+    width: '%100',
+    paddingHorizontal: 20,
   },
-  title: {
-    fontSize: 17,
+  closeButton: {
+    backgroundColor: 'grey',
+    borderRadius: 50,
+    width: 20,
+    height: 20,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  titleText: {
     fontWeight: 'bold',
+    fontSize: 18,
+    color: '#61677A',
+  },
+  userContainer: {
+    backgroundColor: 'white',
+    flexDirection: 'row',
     padding: 10,
+    borderColor: 'grey',
   },
-  textContainer: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: 200,
+  user: {
+    marginHorizontal:5,
+    justifyContent:'center',
+    alignItems:'center'
   },
-  textHeader: {
-    fontSize: 20,
-    fontWeight: 'bold',
-    marginTop: 25,
-    marginBottom: 15,
+  userName: {},
+  userTag: {
+    color:'grey'
   },
-  text: {
-    color: 'grey',
-    justifyContent: 'center',
-    alignItems: 'center',
+  footerContainer: {
+    borderWidth: 0.2,
+    borderColor:'grey',
+    flexDirection:'row',
+    justifyContent:'space-between',
+    alignItems:'center',
+    height:40,
+    paddingHorizontal:10
+
   },
-  button: {
-    borderRadius: 15,
-    backgroundColor: '#4C9EEB',
-  },
-  buttonText: {
-    margin: 8,
-    color: 'white',
-    fontWeight: 'bold',
-  },
+  footerText: {},
 });

@@ -1,12 +1,15 @@
-import {View, Text, TextInput, StyleSheet} from 'react-native';
+import {View, TouchableOpacity, TextInput, StyleSheet} from 'react-native';
 import React from 'react';
 
 import SearchBarIcon from '../../assets/svgs/searchBarIcon.svg';
 
-const SearchBar = ({ placeholder, inputContainer}) => {
+const SearchBar = ({ placeholder, inputContainer, onPress}) => {
   return (
     <View style={{...styles.searchBarContainer , ...inputContainer}}>
+      <TouchableOpacity onPress={onPress}>
+
       <SearchBarIcon />
+      </TouchableOpacity>
       <TextInput
         style={styles.searchBarInput}
         placeholder={placeholder}
@@ -34,7 +37,8 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     justifyContent: 'center',
     alignItems: 'center',
-    color :'#687684'
+    color :'#687684',
+    
   },
 });
 

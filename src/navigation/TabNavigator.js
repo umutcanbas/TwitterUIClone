@@ -1,6 +1,6 @@
-import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import Home from '../pages/Home/Home';
-import Search from '../pages/Search/Search';
+import Trends from '../pages/Trends/Trends';
 import Notification from '../pages/Notification/Notification';
 import Messages from '../pages/Messages/Messages';
 
@@ -18,12 +18,12 @@ const Tab = createBottomTabNavigator();
 
 const TabNavigator = () => {
   return (
-    <Tab.Navigator screenOptions={{ headerShown: false, tabBarShowLabel: false }}>
+    <Tab.Navigator screenOptions={{headerShown: false, tabBarShowLabel: false}}>
       <Tab.Screen
         name="HomePage"
         component={Home}
         options={{
-          tabBarIcon: ({ color, focused }) =>
+          tabBarIcon: ({color, focused}) =>
             focused ? (
               <HomePageIconActive fill={color} />
             ) : (
@@ -32,10 +32,10 @@ const TabNavigator = () => {
         }}
       />
       <Tab.Screen
-        name="SearchPage"
-        component={Search}
+        name="TrendsPage"
+        component={Trends}
         options={{
-          tabBarIcon: ({ color, focused }) =>
+          tabBarIcon: ({color, focused}) =>
             focused ? (
               <SearchPageIconActive fill={color} />
             ) : (
@@ -47,7 +47,7 @@ const TabNavigator = () => {
         name="NotificationPage"
         component={Notification}
         options={{
-          tabBarIcon: ({ color, focused }) =>
+          tabBarIcon: ({color, focused}) =>
             focused ? (
               <NotificationPageIconActive fill={color} />
             ) : (
@@ -59,7 +59,7 @@ const TabNavigator = () => {
         name="Message"
         component={Messages}
         options={{
-          tabBarIcon: ({ color, focused }) =>
+          tabBarIcon: ({color, focused}) =>
             focused ? (
               <MessagePageIconActive fill={color} />
             ) : (

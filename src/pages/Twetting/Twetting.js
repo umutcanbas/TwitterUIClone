@@ -4,6 +4,7 @@ import {
   SafeAreaView,
   TouchableOpacity,
   TextInput,
+  ScrollView,
 } from 'react-native';
 import React from 'react';
 
@@ -21,6 +22,7 @@ const Twetting = ({navigation}) => {
   const goBack = () => {
     navigation.goBack();
   };
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.headerComponent}>
@@ -41,29 +43,31 @@ const Twetting = ({navigation}) => {
       </View>
 
       <View style={styles.twettImageContainer}>
-        <View style={styles.tweetImage}>
-          <CameraIcon />
-        </View>
+        <ScrollView horizontal={true}>
+          <View style={styles.tweetImage}>
+            <CameraIcon />
+          </View>
 
-        <View style={styles.tweetImage}>
-          <Image />
-        </View>
+          <View style={styles.tweetImage}>
+            <Image />
+          </View>
 
-        <View style={styles.tweetImage}>
-          <Image1 />
-        </View>
+          <View style={styles.tweetImage}>
+            <Image1 />
+          </View>
 
-        <View style={styles.tweetImage}>
-          <Image2 />
-        </View>
+          <View style={styles.tweetImage}>
+            <Image2 />
+          </View>
 
-        <View style={styles.tweetImage}>
-          <Image3 />
-        </View>
+          <View style={styles.tweetImage}>
+            <Image3 />
+          </View>
+        </ScrollView>
       </View>
 
-      <View >
-        <Bar width='390' height='50' />
+      <View>
+        <Bar width="390" height="50" />
       </View>
     </SafeAreaView>
   );

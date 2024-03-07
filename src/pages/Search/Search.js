@@ -1,43 +1,81 @@
-import {View, Text, SafeAreaView, TouchableOpacity} from 'react-native';
+import {View, Text, SafeAreaView, Button, ScrollView} from 'react-native';
 import React from 'react';
-import styles from './Search.style';
-import SearchBar from '../../components/SearchBar/SearchBar';
 
-import User from '../../assets/svgs/user.svg';
-import Settings from '../../assets/svgs/settingsIcon.svg';
-import Button from '../../components/Button/Button';
+import styles from './Search.style';
+
+import SearchBar from '../../components/SearchBar/SearchBar';
+import LeftUpArrow from '../../assets/svgs/leftUpArrow.svg';
+import CloseButton from '../../assets/svgs/closeButton.svg';
+import MartaAvatar from '../../assets/svgs/martaAvatar.svg';
+import SabAvatar from '../../assets/svgs/sabAvatar.svg';
+import TabithaAvatar from '../../assets/svgs/tabithaAvatar.svg';
+import FigmaAvatar from '../../assets/svgs/figmaAvatar.svg';
+import FigmaAvatar2 from '../../assets/svgs/figmaAvatar2.svg';
+import Tick from '../../assets/svgs/tickIcon.svg';
 
 const Search = ({navigation}) => {
-  const handleTwetting=()=>{
-    navigation.navigate('TwettingPage')
-      }
+  const goBack = () => {
+    navigation.goBack();
+  };
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.headerContainer}>
-        <User />
         <SearchBar placeholder="Search Twitter" inputContainer={{width: 270}} />
-        <Settings />
+        <Button onPress={goBack} title={'Cancel'} />
       </View>
 
-      <View style={styles.headerTextContainer}>
-        <Text style={styles.title}>Trends for you</Text>
-      </View>
-
-      <View style={styles.textContainer}>
-        <Text style={styles.textHeader}>No new trends for you </Text>
-        <View style={{height: 70, width: 300}}>
-          <Text style={styles.text}>
-            It seems like there’s not a lot to show you right now, but you can
-            see trends for other areas
-          </Text>
+      <View style={styles.titleComponent}>
+        <Text style={styles.titleText}>Recent searches</Text>
+        <View style={styles.closeButton}>
+          <CloseButton width={10} height={10} />
         </View>
-        <TouchableOpacity style={styles.button}>
-          <Text style={styles.buttonText}>Change Location</Text>
-        </TouchableOpacity>
       </View>
 
-      <View style={{flex: 1, backgroundColor: '#E7ECF0'}}></View>
-      <Button title={'Tweet'} onPress={handleTwetting}/>
+      <View style={styles.userContainer}>
+        <ScrollView horizontal={true}>
+          <View style={styles.user}>
+            <SabAvatar height={60} width={60} />
+            <Text style={styles.userName}>Sab Khasa...</Text>
+            <Text style={styles.userTag}>@s_khasan...</Text>
+          </View>
+
+          <View style={styles.user}>
+            <MartaAvatar height={60} width={60} />
+            <Text style={styles.userName}>Martha Cr...</Text>
+            <Text style={styles.userTag}>@craig_love</Text>
+          </View>
+
+          <View style={styles.user}>
+            <TabithaAvatar height={60} width={60} />
+            <Text style={styles.userName}>
+              Tibitha P...
+              <Tick />
+            </Text>
+            <Text style={styles.userTag}>@mis_potter</Text>
+          </View>
+
+          <View style={styles.user}>
+            <FigmaAvatar height={60} width={60} />
+            <Text style={styles.userName}>
+              Figma <Tick />
+            </Text>
+            <Text style={styles.userTag}>@figmadesi...</Text>
+          </View>
+
+          <View style={styles.user}>
+            <FigmaAvatar2 height={60} width={60} />
+            <Text style={styles.userName}>Figma Plugins</Text>
+            <Text style={styles.userTag}>@FigmaPlugins</Text>
+          </View>
+        </ScrollView>
+      </View>
+
+      <View style={styles.footerContainer}>
+        <Text style={styles.footerText}>skhasanov</Text>
+        <LeftUpArrow />
+      </View>
+
+      <View style={{backgroundColor: 'rgb(232, 236, 240)', flex: 1}}></View>
     </SafeAreaView>
   );
 };
