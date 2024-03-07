@@ -13,9 +13,9 @@ import Button from '../../components/Button/Button';
 const Tab = createMaterialTopTabNavigator();
 
 const Notification = ({navigation}) => {
-  const handleTwetting=()=>{
-    navigation.navigate('TwettingPage')
-      }
+  const handleTwetting = () => {
+    navigation.navigate('TwettingPage');
+  };
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.headerContainer}>
@@ -35,7 +35,8 @@ const Notification = ({navigation}) => {
 
         <Tab.Screen name="Mentions" component={Mentions} />
       </Tab.Navigator>
-      <Button title={'Tweet'} onPress={handleTwetting}/>
+
+      <Button title={'Tweet'} onPress={handleTwetting} />
     </SafeAreaView>
   );
 };
