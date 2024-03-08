@@ -8,6 +8,7 @@ import MessagesSetting from '../pages/MessagesSettings/MessagesSetting';
 import Twetting from '../pages/Twetting/Twetting';
 import NewMessage from '../pages/NewMessage/NewMessage';
 import Search from '../pages/Search/Search';
+import Footernavigator from '../components/FooterNavigator/Footernavigator';
 
 const Drawer = createDrawerNavigator();
 
@@ -24,6 +25,7 @@ const DrawerNavigator = () => {
       <Drawer.Screen name="TwettingPage" component={Twetting} />
       <Drawer.Screen name="NewMessagePage" component={NewMessage} />
       <Drawer.Screen name="SearchPage" component={Search} />
+      <Drawer.Screen name="FooterNavigator" component={Footernavigator} />
 
     </Drawer.Navigator>
   );

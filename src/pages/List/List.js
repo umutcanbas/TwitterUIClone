@@ -8,6 +8,9 @@ import Member from './Member/Member';
 import Button from '../../components/Button/Button';
 
 import BackArrow from '../../assets/svgs/leftArrowIcon.svg';
+import Footernavigator from '../../components/FooterNavigator/Footernavigator';
+
+
 
 const Tab = createMaterialTopTabNavigator();
 
@@ -15,6 +18,20 @@ const List = ({navigation}) => {
   const goBack = () => {
     navigation.goBack();
   };
+  const goSearch = ()=>{
+    navigation.navigate('TrendsPage')
+  }
+  const goNotification = ()=>{
+    navigation.navigate('NotificationPage')
+  }
+  const goMessage = ()=>{
+    navigation.navigate('Message')
+  }
+  const goHome = ()=>{
+    navigation.navigate('HomePage')
+  }
+
+ 
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.headerContainer}>
@@ -37,6 +54,13 @@ const List = ({navigation}) => {
       </Tab.Navigator>
 
       <Button title={'List'} />
+
+      <Footernavigator 
+       onPressHome={goHome}
+       onPressSearch={goSearch}
+       onPressNotification={goNotification}
+       onPressMessage={goMessage}
+       />
     </SafeAreaView>
   );
 };
