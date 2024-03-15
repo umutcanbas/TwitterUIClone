@@ -8,5 +8,7 @@ export default StyleSheet.create({
     alignItems: 'center',
     paddingHorizontal: 20,
     margin: 10,
+    width:'%100',
+    height:30
   },
 });
