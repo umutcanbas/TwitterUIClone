@@ -1,5 +1,5 @@
 import {View, Text, SafeAreaView, TouchableOpacity} from 'react-native';
-import React, {useState} from 'react';
+import React from 'react';
 import styles from './Trends.style';
 import SearchBar from '../../components/SearchBar/SearchBar';
 
@@ -19,7 +19,9 @@ navigation.navigate('SearchPage')
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.headerContainer}>
-        <User />
+      <TouchableOpacity onPress={() => navigation.openDrawer()}>
+          <User />
+        </TouchableOpacity>
         <SearchBar
           placeholder="Search Twitter"
           inputContainer={{width: 270}}
