@@ -10,6 +10,9 @@ import Message from '../../assets/svgs/messagePageIcon.svg';
 
 const Footernavigator = props => {
   return (
+    <View style={{ borderTopWidth:0.2,
+      borderColor:'grey'}}>
+
     <View style={styles.container}>
       <View>
         <TouchableOpacity onPress={props.onPressHome}>
@@ -29,6 +32,8 @@ const Footernavigator = props => {
         <Message />
       </TouchableOpacity>
     </View>
+    </View>
+
   );
 };
 

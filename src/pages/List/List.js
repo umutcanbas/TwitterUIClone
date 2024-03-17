@@ -18,7 +18,7 @@ const List = ({navigation}) => {
   const goBack = () => {
     navigation.goBack();
   };
-  const goSearch = ()=>{
+  const goTrends = ()=>{
     navigation.navigate('TrendsPage')
   }
   const goNotification = ()=>{
@@ -57,7 +57,7 @@ const List = ({navigation}) => {
 
       <Footernavigator 
        onPressHome={goHome}
-       onPressSearch={goSearch}
+       onPressSearch={goTrends}
        onPressNotification={goNotification}
        onPressMessage={goMessage}
        />

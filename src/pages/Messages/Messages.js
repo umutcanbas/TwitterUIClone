@@ -35,7 +35,9 @@ const Messages = props => {
     <SafeAreaView style={styles.container}>
       <ScrollView>
         <View style={styles.headerContainer}>
-          <User />
+          <TouchableOpacity onPress={() => props.navigation.openDrawer()}>
+            <User />
+          </TouchableOpacity>
           <Text style={styles.headerContainerText}>Messages</Text>
           <TouchableOpacity onPress={() => handleMessageSetting()}>
             <Settings />
@@ -47,7 +49,7 @@ const Messages = props => {
             borderColor: 'grey',
             paddingBottom: 10,
           }}>
-            <SearchBar placeholder="Search for people and groups" />
+          <SearchBar placeholder="Search for people and groups" />
         </View>
         {/* Aziz message */}
         <View style={styles.messageContainer}>

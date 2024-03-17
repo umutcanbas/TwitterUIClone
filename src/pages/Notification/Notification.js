@@ -1,4 +1,4 @@
-import {View, Text, SafeAreaView} from 'react-native';
+import {View, Text, SafeAreaView ,TouchableOpacity} from 'react-native';
 import React from 'react';
 import styles from './Notification.style';
 import {createMaterialTopTabNavigator} from '@react-navigation/material-top-tabs';
@@ -19,7 +19,9 @@ const Notification = ({navigation}) => {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.headerContainer}>
-        <User />
+      <TouchableOpacity onPress={() => navigation.openDrawer()}>
+          <User />
+        </TouchableOpacity>
         <Text style={styles.headerContainerText}>Notifications</Text>
         <Settings />
       </View>

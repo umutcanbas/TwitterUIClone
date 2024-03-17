@@ -19,8 +19,8 @@ import Likes from './Likes/Likes';
 const Tab = createMaterialTopTabNavigator();
 
 const ProfilePage = ({navigation}) => {
-  const goSearch = () => {
-    navigation.navigate('HomePage');
+  const goTrends = () => {
+    navigation.navigate('TrendsPage');
   };
   const goNotification = () => {
     navigation.navigate('NotificationPage');
@@ -99,7 +99,7 @@ const ProfilePage = ({navigation}) => {
       <Button onPress={handleTwetting} title={'Tweet'} />
       <Footernavigator
         onPressHome={goHome}
-        onPressSearch={goSearch}
+        onPressSearch={goTrends}
         onPressNotification={goNotification}
         onPressMessage={goMessage}
       />

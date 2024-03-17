@@ -9,6 +9,7 @@ export default StyleSheet.create({
     paddingHorizontal: 20,
     margin: 10,
     width:'%100',
-    height:30
+    height:20,
+   
   },
 });
