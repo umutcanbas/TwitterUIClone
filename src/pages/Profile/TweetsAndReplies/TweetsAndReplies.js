@@ -1,10 +1,11 @@
-import {View, Text, ScrollView} from 'react-native';
+import {View, Text, ScrollView, Image} from 'react-native';
 import React from 'react';
 
 import styles from './TweetsAndReplies.style';
 
 import ActionButtons from '../../../assets/svgs/repliceActionButtons.svg';
 import Image1 from '../../../assets/svgs/ımageProfile2.svg';
+import Image1png from '../../../assets/svgs/ımageProfile2png.png';
 import Image2 from '../../../assets/svgs/ımageProfile3.svg';
 import User from '../../../assets/svgs/user.svg';
 import DownIcon from '../../../assets/svgs/downIcon.svg';
@@ -39,8 +40,18 @@ const TweetsAndReplies = () => {
             </View>
 
             <View style={{flexDirection: 'row'}}>
-              <View style={styles.imageBorderContainer}>
-                <Image1 width="80" height="80" resizeMode="contain" />
+              <View
+                style={{
+                  ...styles.imageBorderContainer,
+                  borderTopLeftRadius: 5,
+                  borderBottomLeftRadius: 5,
+                }}>
+                {/* <Image1 width="80" height="80" resizeMode="contain" /> */}
+                <Image
+                  source={require('../../../assets/svgs/ımageProfile2png.png')}
+                  resizeMode="contain"
+                  style={{width:80, height:80}}
+                />
               </View>
               <View
                 style={{

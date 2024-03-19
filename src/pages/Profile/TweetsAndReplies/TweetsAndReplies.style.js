@@ -62,12 +62,13 @@ export default StyleSheet.create({
     borderColor: 'white',
   },
   imageBorderContainer: {
-    position: 'relative',
-    marginBottom: 30,
+    marginBottom: 10,
     borderWidth:0.2,
     borderColor:'grey',
-    width:81,
-    height:80,
+    /* width:81,
+    height:80, */
+    justifyContent:'center',
+    alignItems:'center'
   },
 
   polygon: {
