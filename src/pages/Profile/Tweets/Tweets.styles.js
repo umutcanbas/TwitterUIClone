@@ -5,14 +5,7 @@ export default StyleSheet.create({
     flex: 1,
     backgroundColor: 'white',
   },
-  headerContainer: {
-    flexDirection: 'row',
-    borderBottomWidth: 0.2,
-    borderColor: 'grey',
-    alignItems: 'center',
-    justifyContent: 'space-between',
-    padding: 15,
-  },
+  
   twittContainer: {
     marginTop: 10,
     marginBottom: 3,
