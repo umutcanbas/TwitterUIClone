@@ -1,4 +1,4 @@
-import {View, Text} from 'react-native';
+import {View, Text, ScrollView} from 'react-native';
 import React from 'react';
 
 import styles from './Media.style';
@@ -9,7 +9,7 @@ import DownIcon from '../../../assets/svgs/downIcon.svg';
 
 const Media = () => {
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <View style={styles.twittContainer}>
         <View style={{flexDirection: 'row'}}>
           <View style={styles.twittIcon}>
@@ -47,7 +47,7 @@ const Media = () => {
           </View>
         </View>
       </View>
-    </View>
+    </ScrollView>
   );
 };
 

@@ -10,30 +10,27 @@ import Message from '../../assets/svgs/messagePageIcon.svg';
 
 const Footernavigator = props => {
   return (
-    <View style={{ borderTopWidth:0.2,
-      borderColor:'grey'}}>
-
     <View style={styles.container}>
-      <View>
-        <TouchableOpacity onPress={props.onPressHome}>
-          <Home />
+      <View style={styles.headerContainer}>
+        <View>
+          <TouchableOpacity onPress={props.onPressHome}>
+            <Home />
+          </TouchableOpacity>
+        </View>
+
+        <TouchableOpacity onPress={props.onPressSearch}>
+          <Search />
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={props.onPressNotification}>
+          <Notification />
+        </TouchableOpacity>
+
+        <TouchableOpacity onPress={props.onPressMessage}>
+          <Message />
         </TouchableOpacity>
       </View>
-
-      <TouchableOpacity onPress={props.onPressSearch}>
-        <Search />
-      </TouchableOpacity>
-
-      <TouchableOpacity onPress={props.onPressNotification}>
-        <Notification />
-      </TouchableOpacity>
-
-      <TouchableOpacity onPress={props.onPressMessage}>
-        <Message />
-      </TouchableOpacity>
     </View>
-    </View>
-
   );
 };
 
