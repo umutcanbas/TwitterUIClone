@@ -9,6 +9,7 @@ import Twetting from '../pages/Twetting/Twetting';
 import NewMessage from '../pages/NewMessage/NewMessage';
 import Search from '../pages/Search/Search';
 import Footernavigator from '../components/FooterNavigator/Footernavigator';
+import PixellsTweet from '../components/TweetCards/PixellsTweet/PixellsTweet';
 
 const Drawer = createDrawerNavigator();
 
@@ -25,6 +26,7 @@ const DrawerNavigator = () => {
       <Drawer.Screen name="TwettingPage" component={Twetting} />
       <Drawer.Screen name="NewMessagePage" component={NewMessage} />
       <Drawer.Screen name="SearchPage" component={Search} />
+      <Drawer.Screen name="PixellsTweetPage" component={PixellsTweet} />
       
 
     </Drawer.Navigator>
