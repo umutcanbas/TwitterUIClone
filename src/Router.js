@@ -4,11 +4,14 @@ import {NavigationContainer} from '@react-navigation/native';
 
 import DrawerNavigator from './navigation/DrawerNavigator';
 
+import PixellsTweet from './components/TweetCards/PixellsTweet/PixellsTweet';
+
 const Router = () => {
   return (
-    <NavigationContainer  >
+   /*  <NavigationContainer>
       <DrawerNavigator />
-    </NavigationContainer>
+    </NavigationContainer> */
+    <PixellsTweet/>
   );
 };
 

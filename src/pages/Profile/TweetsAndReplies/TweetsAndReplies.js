@@ -50,7 +50,12 @@ const TweetsAndReplies = () => {
                 <Image
                   source={require('../../../assets/svgs/ımageProfile2png.png')}
                   resizeMode="contain"
-                  style={{width:80, height:80}}
+                  style={{
+                    width: 80,
+                    height: 80,
+                    borderTopLeftRadius: 5,
+                    borderBottomLeftRadius: 5,
+                  }}
                 />
               </View>
               <View
