@@ -67,12 +67,16 @@ const Draw = (props, {navigation}) => {
             <Text style={styles.buttonText}>Topics</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.button}>
+          <TouchableOpacity
+            onPress={() => handlePage('KrenneTweetPage')}
+            style={styles.button}>
             <BookMarksIcon width="16.5" height="20.5" />
             <Text style={styles.buttonText}>Bookmarks</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={{...styles.button, marginBottom: 20}}>
+          <TouchableOpacity
+            onPress={() => handlePage('KomolTweetPage')}
+            style={{...styles.button, marginBottom: 20}}>
             <MomentsIcon width="16.5" height="20.5" />
             <Text style={styles.buttonText}>Moments</Text>
           </TouchableOpacity>
