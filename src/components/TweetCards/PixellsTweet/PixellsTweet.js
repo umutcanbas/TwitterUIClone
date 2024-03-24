@@ -24,11 +24,23 @@ import Search from '../../../assets/svgs/searchPageIcon.svg';
 import Notification from '../../../assets/svgs/notificationPageIcon.svg';
 import Message from '../../../assets/svgs/messagePageIcon.svg';
 
-const PixellsTweet = () => {
+import Modal from '../../../components/Modal/Modal';
+
+const PixellsTweet = ({navigation}) => {
+  const [inputModalVisible, setInputModalVisible] = React.useState(false);
+
+  const handleModalClose = () => {
+    setInputModalVisible(!inputModalVisible);
+  };
+
+const goBack=()=>{
+  navigation.navigate('HomePage')
+}
+
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.headerContainer}>
-        <TouchableOpacity>
+        <TouchableOpacity onPress={goBack}>
           <BackArrow />
         </TouchableOpacity>
         <Text style={styles.headerContainerText}>Tweet</Text>
@@ -106,7 +118,9 @@ const PixellsTweet = () => {
         </View>
         <View style={styles.actionButtons}>
           <CommentIcon />
-          <RetweetIcon />
+          <TouchableOpacity onPress={handleModalClose}>
+            <RetweetIcon />
+          </TouchableOpacity>
           <HeartIcon />
           <ShareIcon />
         </View>
@@ -124,6 +138,8 @@ const PixellsTweet = () => {
         <Notification />
         <Message />
       </View>
+
+      <Modal visible={inputModalVisible} onClose={handleModalClose} />
     </SafeAreaView>
   );
 };

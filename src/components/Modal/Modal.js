@@ -1,26 +1,34 @@
-import React, { useState } from "react";
-import { Button, Text, View } from "react-native";
-import Modal from "react-native-modal";
+import React, {useState} from 'react';
+import {Text, TouchableOpacity, View} from 'react-native';
+import Modal from 'react-native-modal';
 
-function ModalTester() {
-  const [isModalVisible, setModalVisible] = useState(false);
+import Retweet from '../../assets/svgs/retweetStrokeIcon.svg';
+import Pen from '../../assets/svgs/penStrokeIcon.svg';
 
-  const toggleModal = () => {
-    setModalVisible(!isModalVisible);
-  };
-
+import styles from './Modal.style';
+function ModalTester({visible, onClose}) {
   return (
-    <View style={{ flex: 1 }}>
-      <Button title="Show modal" onPress={toggleModal} />
-
-      <Modal isVisible={isModalVisible}>
-        <View style={{ flex: 1 }}>
-          <Text>Hello!</Text>
-
-          <Button title="Hide modal" onPress={toggleModal} />
+    <Modal
+      style={styles.modal}
+      isVisible={visible}
+      swipeDirection="down"
+      onSwipeComplete={onClose}
+      onBackdropPress={onClose}
+      onBackButtonPress={onClose}>
+      <View style={styles.container}>
+        <View style={styles.innerContainer}>
+          <Retweet width="25" height="25" />
+          <Text style={styles.text}>Retweet!</Text>
         </View>
-      </Modal>
-    </View>
+        <View style={styles.innerContainer}>
+          <Pen width="25" height="25" />
+          <Text style={styles.text}>Retweet with comment</Text>
+        </View>
+        <TouchableOpacity style={styles.button}  onPress={onClose}>
+          <Text style={styles.buttonText}>Cancel</Text>
+        </TouchableOpacity>
+      </View>
+    </Modal>
   );
 }
 
