@@ -34,7 +34,7 @@ const PixellsTweet = ({navigation}) => {
   };
 
 const goBack=()=>{
-  navigation.navigate('HomePage')
+  navigation.goBack()
 }
 
   return (
@@ -113,7 +113,7 @@ const goBack=()=>{
         </View>
         <View style={styles.component}>
           <Text style={styles.userTag}>
-            <Text style={styles.userName}>1</Text> Like
+            <Text style={styles.userName}>1</Text> Likes
           </Text>
         </View>
         <View style={styles.actionButtons}>
