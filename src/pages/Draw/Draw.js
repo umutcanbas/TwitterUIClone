@@ -60,7 +60,9 @@ const Draw = (props, {navigation}) => {
             <Text style={styles.buttonText}>List</Text>
           </TouchableOpacity>
 
-          <TouchableOpacity style={styles.button}>
+          <TouchableOpacity
+            style={styles.button}
+            onPress={() => handlePage('PixellsTweetPage')}>
             <TopicsIcon width="16.5" height="20.5" />
             <Text style={styles.buttonText}>Topics</Text>
           </TouchableOpacity>

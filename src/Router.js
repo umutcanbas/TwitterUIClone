@@ -8,10 +8,9 @@ import PixellsTweet from './components/TweetCards/PixellsTweet/PixellsTweet';
 
 const Router = () => {
   return (
-   /*  <NavigationContainer>
+    <NavigationContainer>
       <DrawerNavigator />
-    </NavigationContainer> */
-    <PixellsTweet/>
+    </NavigationContainer>
   );
 };
 
