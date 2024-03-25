@@ -115,7 +115,7 @@ export default StyleSheet.create({
   },
   replyTwittContainer: {
     flexDirection: 'row',
-    marginTop: 15,
+    marginTop: 10,
     width: 'auto',
     marginBottom: 3,
     marginLeft: 10,
@@ -124,6 +124,8 @@ export default StyleSheet.create({
     width: 300,
     marginBottom: 15,
     marginLeft: 72,
+    marginTop:-90
+
   },
   replyTwittText: {
     color: 'black',
@@ -134,9 +136,8 @@ export default StyleSheet.create({
   replyActionButtons: {
     justifyContent: 'space-between',
     flexDirection: 'row',
-    marginHorizontal: 70,
+    marginHorizontal: 77,
     height: 20,
-    marginBottom: 10,
     marginTop: 4,
     width: 300,
   },
@@ -145,5 +146,19 @@ export default StyleSheet.create({
     fontSize: 14,
     marginLeft: 3,
     marginTop: 3,
+  },
+  krenneReplyTwittTextContainer:{
+    width: 300,
+    marginBottom: 15,
+    marginLeft: 72,
+    marginTop:-110
+
+  },
+  kranneReplyTwittContainer: {
+    flexDirection: 'row',
+    marginTop: 3,
+    width: 'auto',
+    marginBottom: 3,
+    marginLeft: 10,
   },
 });
