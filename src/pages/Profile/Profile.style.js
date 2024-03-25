@@ -39,7 +39,6 @@ export default StyleSheet.create({
     borderColor: 'white',
     marginTop: -20,
   },
-  userInnerContainer: {},
   userText: {
     fontWeight: 'bold',
     fontSize: 17,

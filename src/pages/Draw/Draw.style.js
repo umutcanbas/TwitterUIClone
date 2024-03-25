@@ -11,13 +11,7 @@ export default StyleSheet.create({
     marginTop: -60,
     marginHorizontal: 16,
   },
-  userIcon: {
-    width: 60,
-    height: 60,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginLeft: 6,
-  },
+
   users: {
     flexDirection: 'row',
     justifyContent: 'center',
@@ -46,8 +40,8 @@ export default StyleSheet.create({
     color: 'grey',
   },
   buttonContainer: {
-    borderBottomWidth:0.2,
-    borderColor:'grey'
+    borderBottomWidth: 0.2,
+    borderColor: 'grey',
   },
   buttonText: {
     color: 'black',
@@ -59,11 +53,9 @@ export default StyleSheet.create({
     alignItems: 'center',
     marginTop: 25,
     marginLeft: 20,
-
   },
   appInfoContainer: {
     marginTop: 20,
-    
   },
   appInfoText: {
     marginLeft: 15,

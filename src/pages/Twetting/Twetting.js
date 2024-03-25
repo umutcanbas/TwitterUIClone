@@ -37,9 +37,9 @@ const Twetting = ({navigation}) => {
 
       <View style={styles.tweetContainer}>
         <User width="40" height="40" />
-        <TextInput style={styles.tweetContainerText}>
-          What’s happening?
-        </TextInput>
+        <TextInput
+          style={styles.tweetContainerText}
+          placeholder="What’s happening?"></TextInput>
       </View>
 
       <View style={styles.twettImageContainer}>

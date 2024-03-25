@@ -45,14 +45,12 @@ const ProfilePage = ({navigation}) => {
       </View>
 
       <View style={styles.userContainer}>
-        <View style={styles.userInnerContainer}>
           <View style={styles.user}>
             <User width={70} height={70} />
           </View>
           <Text style={styles.userText}>Pixsellz</Text>
 
           <Text style={styles.userTagText}>@pixsellz</Text>
-        </View>
 
         <TouchableOpacity style={styles.editButton}>
           <Text style={styles.editButtonText}>Edit profile</Text>

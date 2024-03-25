@@ -15,7 +15,6 @@ export default StyleSheet.create({
     fontSize: 20,
     fontWeight: 'bold',
   },
-
   messageContainer: {
     paddingHorizontal: 10,
     paddingVertical: 8,

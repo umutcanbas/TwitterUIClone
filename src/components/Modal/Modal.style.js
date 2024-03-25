@@ -24,18 +24,17 @@ export default StyleSheet.create({
     padding: 5,
     marginHorizontal: 10,
   },
-button:{
-  borderRadius:45,
-  backgroundColor:'rgb(232, 236, 240)',
-  width:'auto',
-  height:50,
-  margin:10,
-  alignItems:'center',
-  justifyContent:'center'
-
-},
-buttonText:{
-  color:'black',
-  fontSize:17
-}
+  button: {
+    borderRadius: 45,
+    backgroundColor: 'rgb(232, 236, 240)',
+    width: 'auto',
+    height: 50,
+    margin: 10,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  buttonText: {
+    color: 'black',
+    fontSize: 17,
+  },
 });

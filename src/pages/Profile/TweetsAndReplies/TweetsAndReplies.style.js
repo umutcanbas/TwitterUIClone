@@ -47,10 +47,6 @@ export default StyleSheet.create({
     marginRight: 10,
     marginLeft: 5,
   },
-  thread: {
-    color: 'rgb(97, 156, 229)',
-    marginBottom: 10,
-  },
   polygonContainer: {
     backgroundColor: '#4C9EEB',
     borderRadius: 50,
@@ -63,12 +59,10 @@ export default StyleSheet.create({
   },
   imageBorderContainer: {
     marginBottom: 10,
-    borderWidth:0.2,
-    borderColor:'grey',
-    /* width:81,
-    height:80, */
-    justifyContent:'center',
-    alignItems:'center'
+    borderWidth: 0.2,
+    borderColor: 'grey',
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 
   polygon: {

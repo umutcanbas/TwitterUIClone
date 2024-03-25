@@ -100,7 +100,7 @@ const Home = ({navigation}) => {
           <View
             style={{
               ...styles.likeContainer,
-              marginRight: 183,
+              marginRight: 170,
             }}>
             <HeartIcon />
             <Text style={styles.likeText}>Zack Jhon liked</Text>
@@ -142,9 +142,9 @@ const Home = ({navigation}) => {
           <View
             style={{
               ...styles.likeContainer,
-              marginRight: 125,
+              marginRight: 107,
             }}>
-            <RetweetIcon />
+            <RetweetIcon/>
             <Text style={styles.likeText}>Kieron Dotson Retweeted</Text>
           </View>
 
@@ -192,7 +192,7 @@ const Home = ({navigation}) => {
           <View
             style={{
               ...styles.likeContainer,
-              marginRight: 177,
+              marginRight: 160,
             }}>
             <HeartIcon />
             <Text style={styles.likeText}>Zack Jhone liked</Text>

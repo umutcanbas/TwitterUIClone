@@ -46,7 +46,6 @@ const TweetsAndReplies = () => {
                   borderTopLeftRadius: 5,
                   borderBottomLeftRadius: 5,
                 }}>
-                {/* <Image1 width="80" height="80" resizeMode="contain" /> */}
                 <Image
                   source={require('../../../assets/svgs/ımageProfile2png.png')}
                   resizeMode="contain"

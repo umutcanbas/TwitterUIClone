@@ -98,11 +98,7 @@ export default StyleSheet.create({
     fontSize: 17,
     padding: 5,
   },
-  ımageContainer: {
-    flexDirection: 'row',
-    marginBottom: 20,
-    marginLeft: 10,
-  },
+
   likeContainer: {
     flexDirection: 'row',
     alignItems: 'center',
@@ -124,8 +120,7 @@ export default StyleSheet.create({
     width: 300,
     marginBottom: 15,
     marginLeft: 72,
-    marginTop:-90
-
+    marginTop: -90,
   },
   replyTwittText: {
     color: 'black',
@@ -147,12 +142,11 @@ export default StyleSheet.create({
     marginLeft: 3,
     marginTop: 3,
   },
-  krenneReplyTwittTextContainer:{
+  krenneReplyTwittTextContainer: {
     width: 300,
     marginBottom: 15,
     marginLeft: 72,
-    marginTop:-110
-
+    marginTop: -110,
   },
   kranneReplyTwittContainer: {
     flexDirection: 'row',

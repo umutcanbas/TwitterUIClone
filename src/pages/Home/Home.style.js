@@ -20,13 +20,12 @@ export default StyleSheet.create({
     paddingLeft: 8,
     borderBottomWidth: 0.2,
     borderColor: 'grey',
-    
   },
   likeContainer: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
-    marginRight: 60,
+    marginRight: 44,
   },
   likeText: {
     marginLeft: 10,
@@ -35,7 +34,7 @@ export default StyleSheet.create({
   twittIcon: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginLeft:8
+    marginLeft: 8,
   },
   userName: {
     fontSize: 17,
@@ -47,14 +46,18 @@ export default StyleSheet.create({
     marginLeft: 5,
     color: 'grey',
   },
-  twittTextContainer:{
-    flexDirection: 'row', marginTop: 5, width: 300
+  twittTextContainer: {
+    flexDirection: 'row',
+    marginTop: 5,
+    width: 300,
   },
-  twittText:{
-    fontWeight: '500', marginRight: 10, marginLeft: 5
+  twittText: {
+    fontWeight: '500',
+    marginRight: 10,
+    marginLeft: 5,
   },
-  thread:{
-    color: 'rgb(97, 156, 229)' , marginBottom:10
-  }
-
+  thread: {
+    color: 'rgb(97, 156, 229)',
+    marginBottom: 10,
+  },
 });

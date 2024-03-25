@@ -45,7 +45,9 @@ export default StyleSheet.create({
     justifyContent:'center',
     alignItems:'center'
   },
-  userName: {},
+  userName: {
+    color:'black'
+  },
   userTag: {
     color:'grey'
   },

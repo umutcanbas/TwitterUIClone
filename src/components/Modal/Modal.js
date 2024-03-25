@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import {Text, TouchableOpacity, View} from 'react-native';
 import Modal from 'react-native-modal';
 
@@ -24,7 +24,7 @@ function ModalTester({visible, onClose}) {
           <Pen width="25" height="25" />
           <Text style={styles.text}>Retweet with comment</Text>
         </View>
-        <TouchableOpacity style={styles.button}  onPress={onClose}>
+        <TouchableOpacity style={styles.button} onPress={onClose}>
           <Text style={styles.buttonText}>Cancel</Text>
         </TouchableOpacity>
       </View>
