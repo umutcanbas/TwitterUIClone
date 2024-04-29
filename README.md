@@ -1,4 +1,19 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+## Twitter UI Clone
+img src='images/TwitterClone1.png' height='400' /> <img src='images/TwitterClone2.png' height='400' /> <img src='images/TwitterClone3.png' height='400' />  <img src='images/TwitterClone4.png' height='400' />  <img src='images/TwitterClone5.png' height='400' />  <img src='images/TwitterClone6.png' height='400' />  <img src='images/TwitterClone7.png' height='400' />  <img src='images/TwitterClone8.png' height='400' />  <img src='images/TwitterClone9.png' height='400' />
+ 
+# Technology
+## React Native
+
+# Tools
+
+- React Navigation
+- Formik
+- React Native Modal
+- SVG
+
+## Features
+
+- Twitter UI Clone
 
 # Getting Started
 
