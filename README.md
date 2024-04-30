@@ -9,7 +9,7 @@
 - React Navigation
 - Formik
 - React Native Modal
-- SVG
+
 
 ## Features
 
